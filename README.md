@@ -66,8 +66,7 @@ is very helpful to understand what kind of issue the **PR** is going to solve.
 Bugfixes: Please describe what kind of bug your fix solve and give us feedback how to reproduce the issue. We're going
 to accept only bugfixes if we can reproduce the issue.
 
-
-[1]: https://ashokatree.net/typo3-extensions/accuweather/
+[1]: https://ashokatree.net/typo3-extension/accuweather/
 [2]: https://getcomposer.org/
 [3]: https://extensions.typo3.org/extension/accuweather
 [4]: https://docs.typo3.org/p/accuweather/master/en-us/Misc/Changelog/Index.html
