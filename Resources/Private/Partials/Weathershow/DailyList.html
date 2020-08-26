@@ -1,0 +1,94 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="daily-data-list ddl-litem-{iterator.cycle}">
+		<span class="daily-list-dt">Date: {dailyData.dt}</span><br/>
+		<span class="daily-list-edt">Epoch Date: <f:format.date format="d.m.Y - H:i:s">{dailyData.edt}</f:format.date></span><br/>		
+		<span class="daily-list-srise">Sun Rise: {dailyData.srise}</span><br/>
+		<span class="daily-list-serise">Sun Epoch Rise: <f:format.date format="d.m.Y - H:i:s">{dailyData.serise}</f:format.date></span><br/>		
+		<span class="daily-list-sset">Epoch Date: {dailyData.sset}</span><br/>		
+		<span class="daily-list-seset">Sun Epoch Set: <f:format.date format="d.m.Y - H:i:s">{dailyData.seset}</f:format.date></span><br/>		
+		
+		<span class="daily-list-mrise">Moon Rise: {dailyData.mrise}</span><br/>
+		<span class="daily-list-merise">Moon Epoch Rise: <f:format.date format="d.m.Y - H:i:s">{dailyData.merise}</f:format.date></span><br/>
+		<span class="daily-list-mset">Moon Set: {dailyData.mset} </span><br/>
+		<span class="daily-list-meset">Moon Epoch Set: <f:format.date format="d.m.Y - H:i:s">{dailyData.meset}</f:format.date></span><br/>
+		<span class="daily-list-mphase">Moon Phase: {dailyData.mphase}</span><br/>
+		<span class="daily-list-mage">Moon Age: {dailyData.mage}</span><br/>
+
+		<span class="daily-list-tempeminv">Temperature Minimum Value: {dailyData.tempeminv}</span><br/>
+		<span class="daily-list-tempeminu">Temperature Minimum Unit: {dailyData.tempeminu}</span><br/>
+		<span class="daily-list-tempmaxv">Temperature Maximum Value: {dailyData.tempmaxv}</span><br/>
+		<span class="daily-list-tempmaxu">Temperature Maximum Unit: {dailyData.tempmaxu}</span><br/>
+
+		<span class="daily-list-rftempminv">Real Feel Temperature Minimum Value: {dailyData.rftempminv}</span><br/>
+		<span class="daily-list-rftempminu">Real Feel Temperature Minimum Unit: {dailyData.rftempminu}</span><br/>
+		<span class="daily-list-rftempmaxv">Real Feel Temperature Maximum Value: {dailyData.rftempmaxv}</span><br/>
+		<span class="daily-list-rftempmaxu">Real Feel Temperature Maximum Unit: {dailyData.rftempmaxu}</span><br/>
+
+		<span class="daily-list-rftempsminv">Real Feel Temperature Shade Minimum Value: {dailyData.rftempsminv}</span><br/>
+		<span class="daily-list-rftempsminu">Real Feel Temperature Shade Minimum Unit: {dailyData.rftempsminu}</span><br/>
+		<span class="daily-list-rftempsmaxv">Real Feel Temperature Shade Maximum Value: {dailyData.rftempsmaxv}</span><br/>
+		<span class="daily-list-rftempsmaxu">Real Feel Temperature Shade Maximum Unit: {dailyData.rftempsmaxu}</span><br/>
+
+		<span class="daily-list-hoursofsun">Hours Of Sun: {dailyData.hoursofsun}</span><br/>
+
+		<span class="daily-list-ddsheatingv">DegreeDaySummary Heating Value: {dailyData.ddsheatingv}</span><br/>
+		<span class="daily-list-ddsheatingu">DegreeDaySummary Heating Unit: {dailyData.ddsheatingu}</span><br/>
+		<span class="daily-list-ddscoolingv">DegreeDaySummary Cooling Value: {dailyData.ddscoolingv}</span><br/>
+		<span class="daily-list-ddscoolingu">DegreeDaySummary Cooling Unit: {dailyData.ddscoolingu}</span><br/>
+		<div class="daily-list-airpollen-list">
+			<f:for each="{dailyData.airpollen}" as="dailyDataAp" iteration="iteratorap">
+	  			<div class="daily-list-airpollen-single ddl-airpollen-litem-{iteratorap.cycle}">
+	  				<span class="daily-list-airpollen-name">Air Pollen Name: {dailyDataAp.name}</span><br/>
+	  				<span class="daily-list-airpollen-value">Air Pollen Value: {dailyDataAp.value}</span><br/>
+	  				<span class="daily-list-airpollen-category">Air Pollen Category: {dailyDataAp.category}</span><br/>
+	  				<f:if condition="{dailyDataAp.type}">
+	  					<span class="daily-list-airpollen-type">Air Pollen Type: {dailyDataAp.type}</span><br/>
+	  				</f:if>
+	  			</div>
+	  		</f:for>												
+		</div>
+		<span class="daily-list-mlink">Mobile Link: {dailyData.mlink}</span><br/>
+		<span class="daily-list-link">Link: {dailyData.link}</span><br/>
+
+		<span class="daily-list-dicon">Day Icon: {dailyData.dicon}</span><br/>
+		<span class="daily-list-diconp">Day Icon Phrase: {dailyData.diconp}</span><br/>
+		<span class="daily-list-dprecipitation">Day Has Precipitation: {dailyData.dprecipitation}</span><br/>
+		<span class="daily-list-dptype">Day Precipitation Type: {dailyData.dptype}</span><br/>
+		<span class="daily-list-dpintensity">Day Precipitation Intensity: {dailyData.dpintensity}</span><br/>
+		<span class="daily-list-dsphrase">Day Short Phrase: {dailyData.dsphrase}</span><br/>
+		<span class="daily-list-dlphrase">Day Long Phrase: {dailyData.dlphrase}</span><br/>
+		<span class="daily-list-dpprobability">Day Precipitation Probability: {dailyData.dpprobability}</span><br/>
+		<span class="daily-list-dtprobability">Day Thunderstorm Probability: {dailyData.dtprobability}</span><br/>
+		<span class="daily-list-drprobability">Day Rain Probability: {dailyData.drprobability}</span><br/>
+		<span class="daily-list-dsprobability">Day Snow Probability: {dailyData.dsprobability}</span><br/>
+		<span class="daily-list-diprobability">>Day Ice Probability: {dailyData.diprobability}</span><br/>
+
+		<span class="daily-list-dhop">Day Hours Of Precipitation: {dailyData.dhop}</span><br/>
+		<span class="daily-list-dhor">Day Hours Of Rain: {dailyData.dhor}</span><br/>
+		<span class="daily-list-dhos">Day Hours Of Snow: {dailyData.dhos}</span><br/>
+		<span class="daily-list-dhoi">Day Hours Of Ice: {dailyData.dhoi}</span><br/>
+		<span class="daily-list-dcc">Day Cloud Cover: {dailyData.dcc}</span><br/>
+
+		<span class="daily-list-dwseedv">Day Wind Speed Value: {dailyData.dwseedv}</span><br/>
+		<span class="daily-list-dwseedu">Day Wind Speed Unit: {dailyData.dwseedu}</span><br/>
+		<span class="daily-list-dwseedd">Day Wind Direction Degrees: {dailyData.dwseedd}</span><br/>
+		<span class="daily-list-dwseede">Day Wind Direction English: {dailyData.dwseede}</span><br/>
+
+		<span class="daily-list-dwgseedv">Day Wind Gust Speed Value: {dailyData.dwgseedv}</span><br/>
+		<span class="daily-list-dwgseedu">Day Wind Gust Speed Unit: {dailyData.dwgseedu}</span><br/>
+		<span class="daily-list-dwgseedd">Day Wind Gust Direction Degrees: {dailyData.dwgseedd}</span><br/>
+		<span class="daily-list-dwgseede">Day Wind Gust Direction English: {dailyData.dwgseede}</span><br/>
+
+		<span class="daily-list-dtliquidv">Day TotalLiquid Value: {dailyData.dtliquidv}</span><br/>
+		<span class="daily-list-dtliquidu">Day TotalLiquid Unit: {dailyData.dtliquidu}</span><br/>
+
+		<span class="daily-list-drainv">Day Rain Value: {dailyData.drainv}</span><br/>
+		<span class="daily-list-drainu">Day Rain Unit: {dailyData.drainu}</span><br/>
+
+		<span class="daily-list-dsnowv">Day Snow Value: {dailyData.dsnowv}</span><br/>
+		<span class="daily-list-dsnowu">Day Snow Unit: {dailyData.dsnowu}</span><br/>
+
+		<span class="daily-list-dicev">Day Ice Value: {dailyData.dicev}</span><br/>
+		<span class="daily-list-diceu">Day Ice Unit: {dailyData.diceu}</span><br/>
+	<hr/>
+</div>

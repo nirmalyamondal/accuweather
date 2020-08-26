@@ -1,0 +1,157 @@
+<f:layout name="Default" />
+<f:section name="main">
+<div class="accuweather-current">
+	<h2>Current Weather</h2>
+	<span class="weather-lodt">Local Observation Date Time: {current.lodt}</span><br/>
+	<span class="weather-epoch">Epoch Time: {current.epoch}</span><br/>
+
+	<span class="weather-weather">Weather: {current.weather}</span><br/>
+	<span class="weather-WeatherIcon">Weather Icon: <img src="https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/0{current.icon}-s.png" /></span><br/>
+
+	<span class="weather-precipitation">Precipitation: {current.precipitation}</span><br/>
+	<span class="weather-PrecipitationType">Precipitation Type: {current.ptype}</span><br/>
+	<span class="weather-isdaytime">Is day time: {current.isdaytime}</span><br/>
+
+	<span class="weather-temperaturec">Temperature Centrigrade: {current.temperaturec}</span><br/>
+	<span class="weather-temperaturef">Temperature Farenheit: {current.temperaturef}</span><br/>
+
+	<span class="weather-rftemperaturec">Real Feel Temperature Centrigrade: {current.rftemperaturec}</span><br/>
+	<span class="weather-rftemperaturef">Real Feel Temperature Farenheit: {current.rftemperaturef}</span><br/>
+	<span class="weather-rftemperaturesc">Real Feel Temperature at Shade Centrigrade: {current.rftemperaturesc}</span><br/>
+	<span class="weather-rftemperaturesf">Real Feel Temperature at Shade Farenheit:{current.rftemperaturesf}</span><br/>
+
+	<span class="weather-rhumidity">Relative Humidity: {current.rhumidity}</span><br/>
+	<span class="weather-irhumidity">Indoor Relative Humidity: {current.irhumidity}</span><br/>
+	<span class="weather-dewpointm">Dewpoint Metric: {current.dewpointm}</span><br/>
+	<span class="weather-dewpointi">Dewpoint Imperial: {current.dewpointi}</span><br/>
+
+	<span class="weather-winddd">Wind Direction Degrees: {current.winddd}</span><br/>
+	<span class="weather-windde">Wind Direction: {current.windde}</span><br/>
+	<span class="weather-windsmv">Wind Speed Metric: {current.windsmv}</span><br/>
+	<span class="weather-windsmu">Wind Speed Metric Unit: {current.windsmu}</span><br/>
+	<span class="weather-windsiv">Wind Speed Imperial: {current.windsiv}</span><br/>
+	<span class="weather-windsiu">Wind Speed Imperial Unit: {current.windsiu}</span><br/>
+
+	<span class="weather-windgustsmv">WindGust Speed Metric: {current.windgustsmv}</span><br/>
+	<span class="weather-windgustsmu">WindGust Speed Metric Unit: {current.windgustsmu}</span><br/>
+	<span class="weather-windgustsiv">WindGust Speed Imperial: {current.windgustsiv}</span><br/>
+	<span class="weather-windgustsiu">WindGust Speed Imperial Unit: {current.windgustsiu}</span><br/>
+
+	<span class="weather-uvindex">UV Index: {current.uvindex}</span><br/>
+	<span class="weather-uvindextext">UV Index Text: {current.uvindextext}</span><br/>
+
+	<span class="weather-visibilitymv">Visibility Metric: {current.visibilitymv}</span><br/>
+	<span class="weather-visibilitymu">Visibility Metric Unit: {current.visibilitymu}</span><br/>
+	<span class="weather-visibilityiv">Visibility Imperial: {current.visibilityiv}</span><br/>
+	<span class="weather-visibilityiu">Visibility Imperial Unit: {current.visibilityiu}</span><br/>
+	<span class="weather-otvisibility">Obstructions To Visibility: {current.otvisibility}</span><br/>
+	<span class="weather-cloudcover">Cloud Cover: {current.cloudcover}</span><br/>
+
+	<span class="weather-ceilingmv">Ceiling Metric: {current.ceilingmv}</span><br/>
+	<span class="weather-ceilingmu">Ceiling Metric Unit: {current.ceilingmu}</span><br/>
+	<span class="weather-ceilingiv">Ceiling Imperial: {current.ceilingiv}</span><br/>
+	<span class="weather-ceilingiu">Ceiling Imperial Unit: {current.ceilingiu}</span><br/>
+
+	<span class="weather-pressuremv">Pressure Metric: {current.pressuremv}</span><br/>
+	<span class="weather-pressuremu">Pressure Metric Unit: {current.pressuremu}</span><br/>
+	<span class="weather-pressureiv">Pressure Imperial: {current.pressureiv}</span><br/>
+	<span class="weather-pressureiu">Pressure Imperial Unit: {current.pressureiu}</span><br/>
+	<span class="weather-pressuretl">Pressure Tendency Localized Text: {current.pressuretl}</span><br/>
+	<span class="weather-pressuretc">Pressure Tendency Code: {current.pressuretc}</span><br/>
+
+	<span class="weather-p24htdmv">Past 24Hour Temperature Departure Metric: {current.p24htdmv}</span><br/>
+	<span class="weather-p24htdmu">Past 24Hour Temperature Departure Metric Unit: {current.p24htdmu}</span><br/>
+	<span class="weather-p24htdiv">Past 24Hour Temperature Departure Imperial: {current.p24htdiv}</span><br/>
+	<span class="weather-p24htdiu">Past 24Hour Temperature Departure Imperial Unit: {current.p24htdiu}</span><br/>
+
+	<span class="weather-apparenttmv">Apparent Temperature Metric: {current.apparenttmv}</span><br/>
+	<span class="weather-apparenttmu">Apparent Temperature Metric Unit: {current.apparenttmu}</span><br/>
+	<span class="weather-apparenttiv">Apparent Temperature Imperial: {current.apparenttiv}</span><br/>
+	<span class="weather-apparenttiu">Apparent Temperature Imperial Unit: {current.apparenttiu}</span><br/>
+
+	<span class="weather-windchilltmv">WindChill Temperature Metric: {current.windchilltmv}</span><br/>
+	<span class="weather-windchilltmu">WindChill Temperature Metric Unit: {current.windchilltmu}</span><br/>
+	<span class="weather-windchilltiv">WindChill Temperature Imperial: {current.windchilltiv}</span><br/>
+	<span class="weather-windchilltiu">WindChill Temperature Imperial Unit: {current.windchilltiu}</span><br/>
+
+	<span class="weather-wetbulbtmv">WetBulb Temperature Metric: {current.wetbulbtmv}</span><br/>
+	<span class="weather-wetbulbtmu">WetBulb Temperature Metric Unit: {current.wetbulbtmu}</span><br/>
+	<span class="weather-wetbulbtiv">WetBulb Temperature Imperial: {current.wetbulbtiv}</span><br/>
+	<span class="weather-wetbulbtiu">WetBulb Temperature Imperial Unit: {current.wetbulbtiu}</span><br/>
+
+	<span class="weather-precip1hrmv">Precipitation 1hr Metric: {current.precip1hrmv}</span><br/>
+	<span class="weather-precip1hrmu">Precipitation 1hr Metric Unit: {current.precip1hrmu}</span><br/>
+	<span class="weather-precip1hriv">Precipitation 1hr Imperial: {current.precip1hriv}</span><br/>
+	<span class="weather-precip1hriu">Precipitation 1hr Imperial Unit: {current.precip1hriu}</span><br/>
+
+	<span class="weather-psummarypmv">Precipitation Summary Metric: {current.psummarypmv}</span><br/>
+	<span class="weather-psummarypmu">Precipitation Summary Metric Unit: {current.psummarypmu}</span><br/>
+	<span class="weather-psummarypiv">Precipitation Summary Imperial: {current.psummarypiv}</span><br/>
+	<span class="weather-psummarypiu">Precipitation Summary Imperial Unit: {current.psummarypiu}</span><br/>
+
+	<span class="weather-psummaryphmv">Precipitation Summary Past Hour Metric: {current.psummaryphmv}</span><br/>
+	<span class="weather-psummaryphmu">Precipitation Summary Past Hour Metric Unit: {current.psummaryphmu}</span><br/>
+	<span class="weather-psummaryphiv">Precipitation Summary Past Hour Imperial: {current.psummaryphiv}</span><br/>
+	<span class="weather-psummaryphiu">Precipitation Summary Past Hour Imperial Unit: {current.psummaryphiu}</span><br/>
+
+	<span class="weather-psummaryp3hmv">Precipitation Summary Past 3Hour Metric: {current.psummaryp3hmv}</span><br/>
+	<span class="weather-psummaryp3hmu">Precipitation Summary Past 3Hour Metric Unit: {current.psummaryp3hmu}</span><br/>
+	<span class="weather-psummaryp3hiv">Precipitation Summary Past 3Hour Imperial: {current.psummaryp3hiv}</span><br/>
+	<span class="weather-psummaryp3hiu">Precipitation Summary Past 3Hour Imperial Unit: {current.psummaryp3hiu}</span><br/>
+
+	<span class="weather-psummaryp6hmv">Precipitation Summary Past 6Hour Metric: {current.psummaryp6hmv}</span><br/>
+	<span class="weather-psummaryp6hmu">Precipitation Summary Past 6Hour Metric Unit: {current.psummaryp6hmu}</span><br/>
+	<span class="weather-psummaryp6hiv">Precipitation Summary Past 6Hour Imperial: {current.psummaryp6hiv}</span><br/>
+	<span class="weather-psummaryp6hiu">Precipitation Summary Past 6Hour Imperial Unit: {current.psummaryp6hiu}</span><br/>
+
+	<span class="weather-psummaryp9hmv">Precipitation Summary Past 9Hour Metric: {current.psummaryp9hmv}</span><br/>
+	<span class="weather-psummaryp9hmu">Precipitation Summary Past 9Hour Metric Unit: {current.psummaryp9hmu}</span><br/>
+	<span class="weather-psummaryp9hiv">Precipitation Summary Past 9Hour Imperial: {current.psummaryp9hiv}</span><br/>
+	<span class="weather-psummaryp9hiu">Precipitation Summary Past 9Hour Imperial Unit: {current.psummaryp9hiu}</span><br/>
+
+	<span class="weather-psummaryp12hmv">Precipitation Summary Past 12Hour Metric: {current.psummaryp12hmv}</span><br/>
+	<span class="weather-psummaryp12hmu">Precipitation Summary Past 12Hour Metric Unit: {current.psummaryp12hmu}</span><br/>
+	<span class="weather-psummaryp12hiv">Precipitation Summary Past 12Hour Imperial: {current.psummaryp12hiv}</span><br/>
+	<span class="weather-psummaryp12hiu">Precipitation Summary Past 12Hour Imperial Unit: {current.psummaryp12hiu}</span><br/>
+
+	<span class="weather-psummaryp12hmv">Precipitation Summary Past 12Hour Metric: {current.psummaryp12hmv}</span><br/>
+	<span class="weather-psummaryp12hmu">Precipitation Summary Past 12Hour Metric Unit: {current.psummaryp12hmu}</span><br/>
+	<span class="weather-psummaryp12hiv">Precipitation Summary Past 12Hour Imperial: {current.psummaryp12hiv}</span><br/>
+	<span class="weather-psummaryp12hiu">Precipitation Summary Past 12Hour Imperial Unit: {current.psummaryp12hiu}</span><br/>
+
+	<span class="weather-psummaryp24hmv">Precipitation Summary Past 24Hour Metric: {current.psummaryp24hmv}</span><br/>
+	<span class="weather-psummaryp24hmu">Precipitation Summary Past 24Hour Metric Unit: {current.psummaryp24hmu}</span><br/>
+	<span class="weather-psummaryp24hiv">Precipitation Summary Past 24Hour Imperial: {current.psummaryp24hiv}</span><br/>
+	<span class="weather-psummaryp24hiu">Precipitation Summary Past 24Hour Imperial Unit: {current.psummaryp24hiu}</span><br/>
+
+	<span class="weather-tsummaryp6hmimv">Temperature Summary Past 6Hour Range Minimum Metric: {current.tsummaryp6hmimv}</span><br/>
+	<span class="weather-tsummaryp6hmimu">Temperature Summary Past 6Hour Range Minimum Metric Unit: {current.tsummaryp6hmimu}</span><br/>
+	<span class="weather-tsummaryp6hmiiv">Temperature Summary Past 6Hour Range Minimum Imperial: {current.tsummaryp6hmiiv}</span><br/>
+	<span class="weather-tsummaryp6hmiiu">Temperature Summary Past 6Hour Range Minimum Imperial Unit: {current.tsummaryp6hmiiu}</span><br/>
+	<span class="weather-tsummaryp6hmxmv">Temperature Summary Past 6Hour Range Maximum Metric: {current.tsummaryp6hmxmv}</span><br/>
+	<span class="weather-tsummaryp6hmxmu">Temperature Summary Past 6Hour Range Maximum Metric Unit: {current.tsummaryp6hmxmu}</span><br/>
+	<span class="weather-tsummaryp6hmxiv">Temperature Summary Past 6Hour Range Maximum Imperial: {current.tsummaryp6hmxiv}</span><br/>
+	<span class="weather-tsummaryp6hmxiu">Temperature Summary Past 6Hour Range Maximum Imperial Unit: {current.tsummaryp6hmxiu}</span><br/>
+
+	<span class="weather-tsummaryp12hmimv">Temperature Summary Past 12Hour Range Minimum Metric: {current.tsummaryp12hmimv}</span><br/>
+	<span class="weather-tsummaryp12hmimu">Temperature Summary Past 12Hour Range Minimum Metric Unit: {current.tsummaryp12hmimu}</span><br/>
+	<span class="weather-tsummaryp12hmiiv">Temperature Summary Past 12Hour Range Minimum Imperial: {current.tsummaryp12hmiiv}</span><br/>
+	<span class="weather-tsummaryp12hmiiu">Temperature Summary Past 12Hour Range Minimum Imperial Unit: {current.tsummaryp12hmiiu}</span><br/>
+	<span class="weather-tsummaryp12hmxmv">Temperature Summary Past 12Hour Range Maximum Metric: {current.tsummaryp12hmxmv}</span><br/>
+	<span class="weather-tsummaryp12hmxmu">Temperature Summary Past 12Hour Range Maximum Metric Unit: {current.tsummaryp12hmxmu}</span><br/>
+	<span class="weather-tsummaryp12hmxiv">Temperature Summary Past 12Hour Range Maximum Imperial: {current.tsummaryp12hmxiv}</span><br/>
+	<span class="weather-tsummaryp12hmxiu">Temperature Summary Past 12Hour Range Maximum Imperial Unit: {current.tsummaryp12hmxiu}</span><br/>
+
+	<span class="weather-tsummaryp24hmimv">Temperature Summary Past 24Hour Range Minimum Metric: {current.tsummaryp24hmimv}</span><br/>
+	<span class="weather-tsummaryp24hmimu">Temperature Summary Past 24Hour Range Minimum Metric Unit: {current.tsummaryp24hmimu}</span><br/>
+	<span class="weather-tsummaryp24hmiiv">Temperature Summary Past 24Hour Range Minimum Imperial: {current.tsummaryp24hmiiv}</span><br/>
+	<span class="weather-tsummaryp24hmiiu">Temperature Summary Past 24Hour Range Minimum Imperial Unit: {current.tsummaryp24hmiiu}</span><br/>
+	<span class="weather-tsummaryp24hmxmv">Temperature Summary Past 24Hour Range Maximum Metric: {current.tsummaryp24hmxmv}</span><br/>
+	<span class="weather-tsummaryp24hmxmu">Temperature Summary Past 24Hour Range Maximum Metric Unit: {current.tsummaryp24hmxmu}</span><br/>
+	<span class="weather-tsummaryp24hmxiv">Temperature Summary Past 24Hour Range Maximum Imperial: {current.tsummaryp24hmxiv}</span><br/>
+	<span class="weather-tsummaryp24hmxiu">Temperature Summary Past 24Hour Range Maximum Imperial Unit: {current.tsummaryp24hmxiu}</span><br/>
+
+	<span class="weather-mobilelink">Mobile Link: {current.mobilelink}</span><br/>
+	<span class="weather-link">Web Link: {current.link}</span><br/>
+</div>	
+</f:section>

@@ -1,0 +1,11 @@
+# URLs to download JSON files
+#############################
+
+# cat=records/enable/101; type=string; label=LLL:EXT:accuweather/Resources/Private/Language/locallang.xlf:current_url
+current_url = http://dataservice.accuweather.com/currentconditions/v1/
+
+# cat=records/enable/102; type=string; label=LLL:EXT:accuweather/Resources/Private/Language/locallang.xlf:hourly_url
+hourly_url = http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/
+
+# cat=records/enable/103; type=string; label=LLL:EXT:accuweather/Resources/Private/Language/locallang.xlf:daily_url
+daily_url = http://dataservice.accuweather.com/forecasts/v1/daily/5day/

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:accuweather/Resources/Private/Language/locallang" date="2020-08-01T16:53:31Z" product-name="accuweather">
+		<header/>
+		<body>
+			<trans-unit id="name" resname="name">
+				<source>AccuWeather Current and Forecast show</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Show AccuWeather data as Current and Forecast</source>
+			</trans-unit>
+			<trans-unit id="tx_accuweather_pi1.name" resname="tx_accuweather_pi1.name">
+				<source>AccuWeather</source>
+			</trans-unit>
+			<trans-unit id="tx_accuweather_pi1.description" resname="tx_accuweather_pi1.description">
+				<source>Show AccuWeather data as Current and Forecast</source>
+			</trans-unit>
+			<trans-unit id="current_title" resname="current_title">
+				<source>AccuWeather Current data import.</source>
+			</trans-unit>
+			<trans-unit id="current_description" resname="current_description">
+				<source>Import AccuWeather Current data as a JSON file.</source>
+			</trans-unit>
+			<trans-unit id="hourly_title" resname="hourly_title">
+				<source>AccuWeather Hourly data import.</source>
+			</trans-unit>
+			<trans-unit id="hourly_description" resname="hourly_description">
+				<source>Import AccuWeather Hourly forecast data as JSON file.</source>
+			</trans-unit>
+			<trans-unit id="daily_title" resname="daily_title">
+				<source>AccuWeather Daily data import.</source>
+			</trans-unit>
+			<trans-unit id="daily_description" resname="daily_description">
+				<source>Import AccuWeather Daily forecast data as a JSON file.</source>
+			</trans-unit>
+			<trans-unit id="appid" resname="appid">
+				<source>AccuWeather Application Key to accuweathermap.org e.g. AA33DBynuJPWFAieW7YYOTbGeTqBGsXg </source>
+			</trans-unit>
+			<trans-unit id="folder" resname="folder">
+				<source>Folder path to save JSON import file e.g /fileadmin/accuweathermap/</source>
+			</trans-unit>
+			<trans-unit id="file" resname="file">
+				<source>JSON import file name e.g current.json or hourly.json or daily.json</source>
+			</trans-unit>
+			<trans-unit id="placeid" resname="placeid">
+				<source><![CDATA[ Place Id of the place to display weather e.g 2877452 (Get Place Id by http://dataservice.accuweather.com/locations/v1/cities/geoposition/search.json?apikey=ApiKeyq=Latitude Of The Place,Longitude of the Place)]]></source>
+			</trans-unit>
+			<trans-unit id="appid_invalid" resname="appid_invalid">
+				<source>AccuWeather Application Key is required!</source>
+			</trans-unit>
+			<trans-unit id="folder_invalid" resname="folder_invalid">
+				<source>JSON import storage folder path is required!</source>
+			</trans-unit>
+			<trans-unit id="file_invalid" resname="file_invalid">
+				<source>JSON Import storage file name is required!</source>
+			</trans-unit>
+			<trans-unit id="placeid_invalid" resname="placeid_invalid">
+				<source>Place Id of the place to display weather is required!</source>
+			</trans-unit>
+			<trans-unit id="current_url" resname="current_url">
+				<source>AccuWeather Current weather base url</source>
+			</trans-unit>
+			<trans-unit id="hourly_url" resname="hourly_url">
+				<source>AccuWeather Hourly forecast base url</source>
+			</trans-unit>
+			<trans-unit id="daily_url" resname="daily_url">
+				<source>AccuWeather Daily forecast base url</source>
+			</trans-unit>
+			<trans-unit id="flexforms.whattoshow" resname="flexforms.whattoshow">
+				<source>What weather to show</source>
+			</trans-unit>
+			<trans-unit id="flexforms.current" resname="flexforms.current">
+				<source>Current Weather</source>
+			</trans-unit>
+			<trans-unit id="flexforms.hourly" resname="flexforms.hourly">
+				<source>Hourly Forecast</source>
+			</trans-unit>
+			<trans-unit id="flexforms.daily" resname="flexforms.daily">
+				<source>Daily Forecast</source>
+			</trans-unit>
+			<trans-unit id="flexforms.filepath" resname="flexforms.filepath">
+				<source>Weather JSON file path e.g fileadmin/accuweather/current.json or fileadmin/accuweather/hourly.json or fileadmin/accuweather/daily.json</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

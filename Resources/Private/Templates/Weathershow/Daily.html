@@ -1,0 +1,24 @@
+<f:layout name="Default" />
+<f:section name="main">
+<div class="accuweather-daily">
+	<h2>Daily template</h2>
+	<div class="accuweather-daily-head">
+		<h4>Daily Weather Head</h4>
+		<span class="daily-head-dt">Effective Date: {headlineDataAll.dt}</span><br/>
+		<span class="daily-head-edt">Effective Epoch Date: <f:format.date format="d.m.Y - H:i:s">{headlineDataAll.edt}</f:format.date></span><br/>		
+		<span class="daily-head-severity">Severity: {headlineDataAll.severity}</span><br/>
+		<span class="daily-head-text">Text: {headlineDataAll.text}</span><br/>
+		<span class="daily-head-category">Category: {headlineDataAll.category}</span><br/>
+		<span class="daily-head-edate">End Date: {headlineDataAll.edate}</span><br/>
+		<span class="daily-head-eedate">End Epoch Date: <f:format.date format="d.m.Y - H:i:s">{headlineDataAll.eedate}</f:format.date></span><br/>
+		<span class="daily-head-mlink">Mobile Link: {headlineDataAll.mlink} </span><br/>		
+		<span class="daily-head-link">Link: {headlineDataAll.link}</span><br/>
+	</div>	
+	<div class="accuweather-daily-datalist">
+		<h4>Daily Weather List</h4>
+		<f:for each="{dailyDataAll}" as="dailyData" iteration="iterator">
+  			<f:render partial="Weathershow/DailyList" arguments="{dailyData:dailyData, iterator:iterator}" />
+  		</f:for>												
+	</div>	
+</div>	
+</f:section>

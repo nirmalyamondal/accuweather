@@ -1,0 +1,9 @@
+<f:layout name="Default" />
+<f:section name="main">
+<div class="accuweather-hourly">
+	<h2>Hourly template</h2>
+	<f:for each="{hourlyDataAll}" as="hourly" iteration="iterator">
+  		<f:render partial="Weathershow/HourlyList" arguments="{hourly:hourly, iterator:iterator}" />
+  	</f:for>												
+</div>	
+</f:section>
